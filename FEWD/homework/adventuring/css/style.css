@@ -18,10 +18,10 @@ header a {
 
 header .logo {
   float: left;
-  font-size: 40px;
-  height: 100px;
-  padding: 25px;
+  font-size: 60px;
+  padding: 10px;
   color: #728A42;
+  font-family: 'Piedra', cursive;
 }
 
 header .nav {
@@ -30,11 +30,11 @@ header .nav {
 }
 
 header .nav li {
-  font-size: 30px;
+  font-size: 25px;
   display: inline;
   font-weight: 100;
   padding: 10px;
-  border-left: 1px solid black;
+  border-left: 1px solid #728A42;
   color: #8CA952;
 }
 
@@ -42,15 +42,9 @@ header .nav li:hover {
   text-shadow: 1px 1px 1px green;
 }
 
-li.last {
-  border-right: 1px solid black;
+header .nav li.last {
+  border-right: 1px solid #728A42;
   /*background-color: red;*/
-}
-
-footer  {
-  height: 300px;
-  background-color: skyblue;
-  margin: auto;
 }
 
 .container{
@@ -134,10 +128,10 @@ footer  {
 .course {
   width: 360px;
   height: 250px;
-  /*background-color: green;*/
+  box-shadow: 0px 1px 2px 0px black;
   margin: 10px;
   float: left;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid lightgrey;
   overflow: hidden;
 }
@@ -163,6 +157,7 @@ footer  {
 
 .course .course_info .course_name {
   font-size: 20px;
+  padding-bottom: 2px;
   color: #728A42;
   clear: left;
 }
@@ -173,17 +168,49 @@ footer  {
   float: left;
 }
 
-.footer_column {
-  background-color: teal;
-  width: 33%;
+footer  {
   height: 200px;
-  float: left;
-  /*margin: 10px;*/
+  background-color: #728A42;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: white;
 }
-
 .footer_liner {
   margin: auto;
   max-width: 1140px;
-  /*background-color: yellow;*/
   overflow: hidden;
+  /*background-color: white;*/
+  /*padding: 10px;*/
+}
+
+.footer_column {
+  /*background-color: green;*/
+  color: white;
+  width: 360px;
+  /*height: 200px;*/
+  float: left;
+  margin-left: 20px;
+}
+
+.footer_column h2 {
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+
+.footer_column ul li {
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer_column ul li a {
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+  line-height: 20px;
+}
+
+.footer_column ul li a:hover {
+  text-decoration: underline;
 }
