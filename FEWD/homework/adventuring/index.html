@@ -10,23 +10,27 @@
   </head>
   <body>
     <header>
+
       <a href="#">
         <div class="logo">
-          <img src="http://www.fillmurray.com/360/200" height=40 width= 70 alt="logo image">
+          Adventuring
         </div>
        </a>
       <div class="nav">
         <ul>
           <a href="#"><li>sign in</li></a>
           <a href="#"><li>categories</li></a>
-          <a href="#"><li>cities</li></a>
+          <a href="#"><li class='last'>cities</li></a>
         </ul>
       </div>
     </header>
     <div class="hero_bar">
-      <div class="search group">
-        <input type="submit" value="Submit">
-        <input type="text" placeholder="search for classes">
+      <div class="search">
+        <h1>Find Your Adventure</h1>
+        <form name="search" action="index.html" method="get">
+          <input class="submit_botton" type="submit" value="Search">
+          <input class="search_box" type="text" name="search" placeholder="rock climbing, sailing, scuba diving....">
+        </form>
       </div>
     </div>
     <div class="container">
@@ -34,7 +38,80 @@
         <h1>Courses</h1>
         <a href="#">
           <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
+            <div class="course_photo">
+              <img src="images/roof.jpg">
+            </div>
+            <div class="course_info">
+              <div class="course_name">Intermediate Rock Climbing</div>
+              <div class="price">$99</div>
+              <div class="location">Castle Rock Park</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/sail.jpg">
+            </div>     <div class="course_info">
+              <div class="course_name">Beginning Sailing</div>
+              <div class="price">$125</div>
+              <div class="location">San Francisco</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/mountain_bike.jpg">
+            </div>
+            <div class="course_info">
+              <div class="course_name">Technical Mountain Biking</div>
+              <div class="price">$75</div>
+              <div class="location">Santa Cruz Hills</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/scuba.jpg">
+            </div>
+            <div class="course_info">
+              <div class="course_name">Rescue Diving</div>
+              <div class="price">$179</div>
+              <div class="location">Monterey</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/canyoneering.jpg">
+            </div>
+            <div class="course_info">
+              <div class="course_name">Two Day Canyoneering Trip</div>
+              <div class="price">$299</div>
+              <div class="location">Utah</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/skydive.jpg">
+            </div>
+            <div class="course_info">
+              <div class="course_name">Solo Skydiving</div>
+              <div class="price">$100</div>
+              <div class="location">Davis</div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="course">
+            <div class="course_photo">
+              <img width=360 src="images/roof.jpg">
+            </div>
             <div class="course_info">
               <div class="course_name">Course Name</div>
               <div class="price">$99</div>
@@ -44,7 +121,9 @@
         </a>
         <a href="#">
           <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
+            <div class="course_photo">
+              <img width=360 src="images/roof.jpg">
+            </div>
             <div class="course_info">
               <div class="course_name">Course Name</div>
               <div class="price">$99</div>
@@ -54,67 +133,9 @@
         </a>
         <a href="#">
           <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
+            <div class="course_photo">
+              <img width=360 src="images/roof.jpg">
             </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
-            <div class="course_info">
-              <div class="course_name">Course Name</div>
-              <div class="price">$99</div>
-              <div class="location">San Francisco</div>
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="course">
-            <img class="course_image" src="http://www.fillmurray.com/360/200">
             <div class="course_info">
               <div class="course_name">Course Name</div>
               <div class="price">$99</div>
