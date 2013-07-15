@@ -39,7 +39,8 @@ header .nav li {
 }
 
 header .nav li:hover {
-  text-shadow: 1px 1px 1px green;
+  text-shadow: 0 0 1px green;
+  color: #A5BD49;
 }
 
 header .nav li.last {
@@ -51,11 +52,9 @@ header .nav li.last {
   max-width: 1140px;
   overflow: hidden;
   margin: auto;
-  /*background-color: red;*/
-  /*padding: 20px;*/
-  /*border: 1px solid rgba(0, 0, 0, 0.1);*/
-  /*border-radius: 3px;*/
+  /*background-color: lightgreen;*/
 }
+
 .container .main_content h1 {
   font-size: 25px;
   margin-left: 10px;
@@ -110,7 +109,6 @@ header .nav li.last {
   height: 38px;
   width: 100px;
   float: left;
-  /*background-color: #91B651;*/
   background-image: linear-gradient(rgb(175, 202, 125) 20%, rgb(153, 187, 89)), none;
   color: #EDEFEE;
   border-radius: 5px;
@@ -128,17 +126,16 @@ header .nav li.last {
 .course {
   width: 360px;
   height: 250px;
-  box-shadow: 0px 1px 2px 0px black;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
   margin: 10px;
   float: left;
   border-radius: 3px;
-  border: 1px solid lightgrey;
+  /*border: 1px solid gray;*/
   overflow: hidden;
 }
 
 .course:hover {
-  box-shadow: 0 0 10px green;
-  /*background-color: green;*/
+  box-shadow: 0 0 10px darkgreen;
 }
 
 .course .course_info {
@@ -212,5 +209,7 @@ footer  {
 }
 
 .footer_column ul li a:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  text-shadow: 0 0 10px lightgreen;
+  color: white;
 }
