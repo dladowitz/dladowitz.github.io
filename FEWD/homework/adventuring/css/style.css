@@ -148,7 +148,7 @@ header .nav li.last {
 
 .course .course_photo {
   height: 200px;
-  background-color: red;
+  /*background-color: red;*/
   overflow: hidden;
 }
 
