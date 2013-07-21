@@ -7,15 +7,42 @@ body{
   line-height: 1.3em;
 }
 
-.next{
+img {
+  height: 300px;
+  width: 300px;
+  border: 10px solid #f8f7fc;
+  border-radius:25px;
+}
+
+.button{
   display: block;
-  background-color: yellow;
-  width: 100px;
+  background-color: gold;
+  width: 150px;
   padding: 5px;
   text-align: center;
   margin: 5px;
+  border-radius: 5px;
+  float: left;
 }
 
-#slideshow img{
+
+.slideshow_group {
+  margin-top: 20px;
+  /*width: 600px;*/
+  /*height: 350px;*/
+  /*background-color: red;*/
+  /*float: left;*/
+}
+
+
+.slideshow_group img{
+  /*margin: auto;*/
+  /*display: none;*/
+  /*border-radius: 10px;*/
+  /*margin: 10px;*/
+  /*margin-bottom: 10px;*/
+}
+
+#slideshow2 img{
   display: none;
 }

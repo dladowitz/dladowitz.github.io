@@ -12,9 +12,8 @@
 // You may want to use jQuery's .eq() function to get a specific
 // element in the jQuery result. Read about it at api.jquery.com
 
-
-
-var currentImage = 1
+// var images = ['chess.jpg', 'boston.jpg', 'frog.jpg']
+var currentImage = 0
 
 var setCurrentImage = function(){
   currentImage = currentImage + 1
@@ -26,26 +25,16 @@ var setCurrentImage = function(){
 
 var nextSlide = function(){
   console.log('nextSlide firing, currentImage: ' + currentImage)
-  $('#slideshow2 img').hide()
-  $('#slideshow2 img').eq(currentImage).show()
+  $('img').hide()
+  $('img').eq(currentImage).show()
 
   currentImage = setCurrentImage()
 
 };
 
+$(document).ready(function(){
 
 
-$(document).ready(function() {
+  $('.next').click(nextSlide)
 
-  $('#slideshow1').cycle({
-    fx:      'scrollRight',
-    next:   '#next_1',
-    timeout:  0,
-    easing:  'easeInOutBack'
-  });
-
-  $('#slideshow2 img:first-child').show()
-  $('#next_2').click(nextSlide)
-
-});
-
+})
