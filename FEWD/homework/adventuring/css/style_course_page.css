@@ -19,7 +19,10 @@ header  {
   /*background-color: rgba(200, 200, 200, .1);*/
   overflow: hidden;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
-  margin-right: 5px; #to make shadow with reviews match
+  margin-right: 5px;
+  position: relative;
+  z-index: 1;
+  /*background-color: green;*/
 }
 
 .main .course_content .title  {
@@ -31,12 +34,25 @@ header  {
 .main .course_content .main_image {
   max-height: 500px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+
 }
 
 .main .course_content .main_image img {
-  position: relative;
-  bottom: 150px;
+  width: 100%;
+  /*position: relative;*/
+  /*bottom: 150px;*/
 }
+
+.main .course_content .arrow {
+  position: absolute;
+  left: 700px;
+  top: 250px;
+  opacity: .75;
+  z-index: 2;
+}
+
 .main .course_content .description_group h1 {
   font-size: 20px;
   margin: 15px;
