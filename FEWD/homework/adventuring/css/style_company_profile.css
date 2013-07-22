@@ -17,7 +17,7 @@ header  {
   max-width: 805px;
   padding: 0 0px 0px 0;
 }
-.main .course_content {
+.main .company_content {
   border: 1px solid gray;
   border-radius: 5px;
   /*background-color: rgba(200, 200, 200, .1);*/
@@ -28,13 +28,13 @@ header  {
   z-index: 1;
 }
 
-.main .course_content .title  {
+.main .company_content .title  {
   font-size: 50px;
   margin-bottom: 20px;
   margin: 15px;
 }
 
-.main .course_content .main_image {
+.main .company_content .main_image {
   max-height: 500px;
   overflow: hidden;
   position: relative;
@@ -42,13 +42,13 @@ header  {
 
 }
 
-.main .course_content .main_image img {
+.main .company_content .main_image img {
   width: 100%;
   /*position: relative;*/
   /*bottom: 150px;*/
 }
 
-.main .course_content .arrow {
+.main .company_content .arrow {
   position: absolute;
   left: 700px;
   top: 250px;
@@ -56,12 +56,12 @@ header  {
   z-index: 2;
 }
 
-.main .course_content .description_group h1 {
+.main .company_content .description_group h1 {
   font-size: 20px;
   margin: 15px;
 }
 
-.main .course_content .description_group .description {
+.main .company_content .description_group .description {
   font-size: 20px;
   margin: 15px;
   line-height: 24px;
@@ -134,24 +134,45 @@ aside {
   margin-right: 0px;
 }
 
-aside .dates {
+aside .courses_offered {
   font-size: 20px;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
   background-color: rgba(114, 138, 66, .05);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  text-align: center;
 }
 
-aside .dates p {
-  margin: 10px;
+aside .courses_offered p {
   font-size: 30px;
+
 }
 
-aside .dates input {
+/*aside .courses_offered input {
   margin: 10px;
   color: green;
   background-color: green;
+}*/
+
+aside .courses_offered .course {
+  margin: 15px;
+  height: 200px;
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(114, 138, 66, .15);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+}
+
+aside .courses_offered .course .course_name {
+  padding: 5px;
+}
+
+aside .courses_offered .course:hover {
+  box-shadow: 0 0 10px darkgreen;
+  border: 1px solid gray;
 }
 
 aside .price {
@@ -181,7 +202,7 @@ aside .price .buy_now:hover {
   background-image: linear-gradient(rgb(200, 227, 150) 20%, rgb(172, 200, 104)), none;
 }
 
-aside .profile {
+aside .instructors {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
   background-color: rgba(114, 138, 66, .25);
   font-size: 30px;
@@ -190,6 +211,10 @@ aside .profile {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 3px;
+}
+
+aside .instructors p {
+  text-align: center;
 }
 
 aside .image {
@@ -203,15 +228,13 @@ aside .image {
   margin-top: 20px;
 }
 
-aside .profile .image:hover {
+aside .instructor .image:hover {
   box-shadow: 0 0 10px darkgreen;
   border: 1px solid gray;
 }
-aside .profile p {
-  text-align: center;
-}
 
-aside .profile .image img {
+
+aside .instructor .image img {
   width: 200px;
 }
 

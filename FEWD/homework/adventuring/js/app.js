@@ -7,16 +7,14 @@ $(document).ready(function() {
     timeout:  0,
     speed: 1500,
     easing:  'easeInOutBack',
-    pause: 1
   });
 
-  // $('.main_image').cycle({
-  //   fx:      'scrollLeft',
-  //   next:   '.main_image',
-  //   timeout:  0,
+  // $('.course_photo').cycle({
+  //   fx:      'scrollRight',
+  //   // next:   '.course_photo',
+  //   timeout:  500,
   //   speed: 1500,
   //   easing:  'easeInOutBack',
-  //   pause: 1
   // });
 });
 
