@@ -9,12 +9,14 @@ $(document).ready(function() {
     easing:  'easeInOutBack',
   });
 
-  // $('.course_photo').cycle({
-  //   fx:      'scrollRight',
-  //   // next:   '.course_photo',
-  //   timeout:  500,
-  //   speed: 1500,
-  //   easing:  'easeInOutBack',
-  // });
+  $('.course').hover(
+    function(){$(this).find('.overlay').slideDown()},
+    function(){$(this).find('.overlay').slideUp()}
+  );
+
+  $('.course').hover(
+    function(){$(this).find('.course_overlay').slideDown()},
+    function(){$(this).find('.course_overlay').slideUp()}
+  );
 });
 

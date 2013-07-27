@@ -64,10 +64,20 @@ header .nav li.last {
 
 .hero_bar {
   height: 300px;
-  /*background-color: goldenrod;*/
-  background-image: url('../images/el_cap.jpg');
-  background-position: left;
+  /*background-color: #808684;*/
+  /*background-image: url('../images/el_cap.jpg');*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
   overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.hero_bar img{
+  position: absolute;
+  top: -20px;
+  z-index: 1;
+  width: 100%
 }
 
 .search {
@@ -82,6 +92,8 @@ header .nav li.last {
   /*top: 40px;*/
   margin: 50px auto;
   padding: 10px;
+  z-index: 2;
+  position: relative;
 }
 
 .search h1 {
@@ -129,9 +141,9 @@ header .nav li.last {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
   margin: 10px;
   float: left;
-  border-radius: 3px;
-  /*border: 1px solid gray;*/
+  border-radius: 5px;
   overflow: hidden;
+  position: relative;
 }
 
 .course:hover {
@@ -141,15 +153,38 @@ header .nav li.last {
 .course .course_info {
   padding: 5px;
   color: #8CA952;
-  /*background-color: yellow;*/
   height: 50px;
   z-index: 1;
 }
 
 .course .course_photo {
   height: 200px;
-  /*background-color: red;*/
   overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.course .overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, .7);
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 360px;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  bottom: 50px;
+}
+
+.course .overlay .next_class {
+  color: rgba(255, 255, 255, .45);
+  margin-top: 30px;
+}
+
+.course .overlay .class_date {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  font-size: 35px;
 }
 
 .course .course_info .course_name {

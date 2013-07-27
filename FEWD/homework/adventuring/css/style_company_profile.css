@@ -164,6 +164,7 @@ aside .courses_offered .course {
   border-radius: 5px;
   background-color: rgba(114, 138, 66, .15);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+  position: relative;
 }
 
 aside .courses_offered .course .course_name {
@@ -173,6 +174,29 @@ aside .courses_offered .course .course_name {
 aside .courses_offered .course:hover {
   box-shadow: 0 0 10px darkgreen;
   border: 1px solid gray;
+}
+
+aside .courses_offered .course .course_overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  bottom: -31px;
+}
+
+aside .courses_offered .course .course_overlay .next_class {
+  color: rgba(255, 255, 255, .45);
+  margin-top: 30px;
+}
+
+aside .courses_offered .course .course_overlay .class_date {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  font-size: 35px;
 }
 
 aside .price {
