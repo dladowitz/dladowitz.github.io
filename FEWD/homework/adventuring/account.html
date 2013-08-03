@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventuring</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Piedra' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_account.css" />
+    <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+
+      <a href="index.html">
+        <div class="logo">
+          Adventuring
+        </div>
+       </a>
+      <div class="nav">
+        <ul>
+          <a href="sign_in.html"><li>sign in</li></a>
+          <a href="#"><li>categories</li></a>
+          <a href="#"><li>cities</li></a>
+          <a href="account.html"><li class='last'>account</li></a>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="main">
+        <div class="company_creation">
+          <div class="account">Account</div>
+
+          <div class="show_company">
+            <div class="account_section_header">Company Info</div>
+            <table>
+              <tr>
+                <th>Company:</th>
+                <td>Mountian Home Adventure</td>
+              </tr>
+              <tr>
+                <th>Website:</th>
+                <td>www.mountainhomeadventure.com</td>
+              </tr>
+              <tr>
+                <th>Phone:</th>
+                <td>408 867 5309</td>
+              </tr>
+              <tr>
+                <th class='logo_header'>Logo:</th>
+                <td><img class='logo' src="images/mountain_high.jpg" height=100px></td>
+              </tr>
+              <tr>
+                <th>Description:</th>
+                <td>Mountian High Adventures offers an array of rock climbing instruction, rock climbing lessons and private guiding in the form of one day rock climbing classes and two to four day ....</td>
+              </tr>
+
+            </table>
+          </div>
+
+          <div class="edit_company">
+            <div class="account_section_header">Edit Company Info</div>
+            <form>
+                <ul>
+                  <li>Company: <input type="text" name="name" size=50></li>
+                  <li>Website: <input type="text" name="website" size=50></li>
+                  <li>Phone Number: <input type="text" name="website" size=50></li>
+                  <li>Logo: <button type="button">Choose File</button></li>
+                  <li>Description: <textarea rows="5" cols="36" name="comment" form="usrform"></textarea></li>
+                  <li><input class='submit' type="submit"></li>
+                </ul>
+              </form>
+          </div>
+
+          <div class="show_classes">
+            <div class="account_section_header">Active Classes</div>
+            <table>
+              <tr>
+                <th>Intermediate Rock Climbing</th>
+                <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Big Wall Clinic</th>
+                <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Two Day Canyoneering Trip</th>
+                <td><img class='class_img' src="images/canyoneering.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Self Rescue</th>
+                <td><img class='class_img' src="images/mountaineering.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+            </table>
+            <div class="account_section_header">Inactive Classes</div>
+            <table>
+              <tr>
+                <th>Intermediate Rock Climbing</th>
+                <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Big Wall Clinic</th>
+                <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
+                <td><button>edit</button></td>
+              </tr>
+            </table>
+          </div>
+          <div class="user_permissions">
+            <div class="account_section_header">User Permissions</div>
+            <table>
+              <tr>
+                <th>David Ladowitz</th>
+                <td>Admin</td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Teresa Huang</th>
+                <td>Instructor</td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Jason Folk</th>
+                <td>Class Manager, Instructor</td>
+                <td><button>edit</button></td>
+              </tr>
+              <tr>
+                <th>Desiree Motimedi</th>
+                <td>Admin</td>
+                <td><button>edit</button></td>
+              </tr>
+            </table>
+          </div>
+
+<!--           <div class="description_group">
+            <h1>Other Info Here</h1>
+            <div class="description">
+              Put text here
+            </div>
+          </div> -->
+        </div>
+
+<!--         <div class="reviews">
+          <div class="review_group">
+            <div class="reviewer">
+              <a href="#">
+                <div class="image">
+                  <img src="images/amir.jpg">
+                </div>
+              </a>
+              <div class="name">Amir M.</div>
+            </div>
+            <div class='review'>
+              I took their advanced rock climbing class. We learned to build lead anchors and belay from above. Also locked in my cam placement skills and talked about falling.
+              This was the fourth class I've taken from MHA. Looking to take the canyoneering class as well.
+            </div>
+            <div class="rating">
+              <img src="images/yelp_4_stars.jpg">
+            </div>
+          </div>
+          <div class="review_group">
+            <div class="reviewer">
+              <a href="#">
+                <div class="image">
+                  <img src="images/matt_n.jpg">
+                </div>
+              </a>
+              <div class="name">Matt N.</div>
+            </div>
+            <div class='review'>
+              The instructor for this class spent a bunch of extra time going over aid climbing even though it wasn't in the course. I really appreciated the extra time he spent talking about the subject as I'm trying to learn more advenced techniques.
+            </div>
+            <div class="rating">
+              <img src="images/yelp_4_stars.jpg">
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <aside>
+        <div class="account">
+          <div class="show_company_info">
+            Company Info
+          </div>
+          <div class="edit_company_info">
+            Edit Company Info
+          </div>
+          <div class="show_class_info">
+            Classes
+          </div>
+          <div class="show_user_permissions">
+            User Permissions
+          </div>
+        </div>
+
+        <div class="other_info">
+          <p>Other Info</p>
+
+          <!-- <div class="instructor">
+            <a href="#">
+              <div class="image">
+                <img src="images/cameron.jpg">
+              </div>
+            </a>
+            <div class="name">Cameron S.</div>
+            <hr>
+          </div>
+          <div class="instructor">
+            <a href="#">
+              <div class="image">
+                <img src="images/teresa2.jpg">
+              </div>
+            </a>
+            <div class="name">Teresa H.</div>
+            <hr>
+          </div>
+          <div class="instructor">
+            <a href="#">
+              <div class="image">
+                <img src="images/patrick.jpg">
+              </div>
+            </a>
+            <div class="name">Patrick S.</div>
+          </div> -->
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer_liner">
+        <div class="footer_column">
+          <h2>How it Works</h2>
+          <ul>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Guarantee</a></li>
+          </ul>
+        </div>
+        <div class="footer_column">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer_column">
+          <h2>Locations</h2>
+          <ul>
+            <li><a href="#">Bay Area</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Boulder</a></li>
+            <li><a href="#">Los Angeles</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    <script src="http://malsup.github.com/jquery.easing.1.3.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
