@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Piedra' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style_account.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/style_admin_class.css" />
     <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
-
       <a href="index.html">
         <div class="logo">
           Adventuring
@@ -34,28 +33,50 @@
         <div class="company_creation">
           <div class="account">Account</div>
 
-          <div class="show_company">
-            <div class="account_section_header">Company Info</div>
+          <div class="admin_class">
+            <div class="account_section_header">Class</div>
             <table>
               <tr>
-                <th>Company:</th>
-                <td>Mountian Home Adventure</td>
+                <th>Name:</th>
+                <td class='first_class_td'>Intermediate Rock Climbing</td>
+                <td class='last_class_td'><input class='class_input' placeholder='class name'></input><button class='class_save'>save</button></td>
               </tr>
               <tr>
-                <th>Website:</th>
-                <td>www.mountainhomeadventure.com</td>
+                <th>Instructor:</th>
+                <td class='first_class_td'>Cameron S</td>
+                <td class='last_class_td'>
+                  <select class='instructor'>
+                    <option value="Cameron S">Cameron S</option>
+                    <option value="Teresa H">Teresa H</option>
+                    <option value="Patrick K">Patrick K</option>
+                    <option value="David L">David L<David Lion>
+                  </select>
+                  <button class='class_save_instructor'>save</button>
+                </td>
               </tr>
               <tr>
-                <th>Phone:</th>
-                <td>408 867 5309</td>
+                <th>Date:</th>
+                <td class='first_class_td'>Sept 19, 2013</td>
+                <td class='last_class_td'><input class='class_input datepicker' placeholder='date'></input><button class='class_save'>save</button></td>
               </tr>
               <tr>
-                <th class='logo_header'>Logo:</th>
-                <td><img class='logo' src="images/mountain_high.jpg" height=100px></td>
+                <th>Price:</th>
+                <td class='first_class_td'>$99</td>
+                <td class='last_class_td'><input class='class_input' placeholder='price'></input><button class='class_save'>save</button></td>
+              </tr>
+              <tr>
+                <th>Location:</th>
+                <td class='first_class_td'>Castle Rock Park</td>
+                <td class='last_class_td'><input class='class_input' placeholder='location'></input><button class='class_save'>save</button></td>
+              </tr>
+              <tr>
+                <th class='logo_header'>Instructor Photo:</th>
+                <td><img class='logo' src="../images/cameron.jpg" height=100px></td>
               </tr>
               <tr>
                 <th>Description:</th>
-                <td>Mountian High Adventures offers an array of rock climbing instruction, rock climbing lessons and private guiding in the form of one day rock climbing classes and two to four day ....</td>
+                <td class='first_class_td'>Go beyond the basics with this informative rock climbing course designed for those who are ready to take the next step. In this class you will learn how to setup a basic top-rope anchor, rappel safely, and improve your climbing movement techniques. Our professional climbing instructors will provide valuable feedback while you push your climbing ability on challenging routes. This course is perfect for graduates of the Introduction to Rock Climbing class and for intermediate to advanced gym climbers looking to make the transition to outdoor rock climbing.</td>
+                <td class='last_class_td'><textarea class='description' rows="5" cols="30" placeholder='class description'></textarea><button class='class_save_description'>save</button></td>
               </tr>
 
             </table>
@@ -81,22 +102,22 @@
               <tr>
                 <th>Intermediate Rock Climbing</th>
                 <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
               <tr>
                 <th>Big Wall Clinic</th>
                 <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
               <tr>
                 <th>Two Day Canyoneering Trip</th>
                 <td><img class='class_img' src="images/canyoneering.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
               <tr>
                 <th>Self Rescue</th>
                 <td><img class='class_img' src="images/mountaineering.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
             </table>
             <div class="account_section_header">Inactive Classes</div>
@@ -104,12 +125,12 @@
               <tr>
                 <th>Intermediate Rock Climbing</th>
                 <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
               <tr>
                 <th>Big Wall Clinic</th>
                 <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><button>edit</button></td>
               </tr>
             </table>
           </div>
@@ -263,11 +284,10 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
     <script src="http://malsup.github.com/jquery.easing.1.3.js"></script>
-
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,491 @@
+body  {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: rgb(75, 75, 75)
+}
+header  {
+  margin-bottom: 10px
+}
+
+.container {
+  padding-right: 5px;
+  /*background-color: tomato;*/
+}
+
+.main {
+  /*background-color: skyblue;*/
+  overflow: hidden;
+  float: left;
+  /*max-width: 805px;*/
+  padding: 0 0px 5px 0;
+}
+.main .company_creation {
+  border: 1px solid gray;
+  border-radius: 5px;
+  /*background-color: red;*/
+  overflow: hidden;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  margin-right: 5px;
+  position: relative;
+  width: 800px;   /*not sure why there is a problem with width. this fixes it*/
+}
+
+.main .company_creation .account_section_header {
+  font-size: 40px;
+  color: rgba(114, 138, 66, .75);
+  margin-top: 30px;
+}
+
+ .main .company_creation .admin_class {
+  /*width: 600px;*/
+  margin: 40px;
+  font-size: 30px;
+}
+
+.main .company_creation th {
+  text-align: left;
+  /*background-color: red;*/
+  /*width: 175px;*/
+}
+
+.main .company_creation .admin_class td {
+  padding-left: 20px;
+  padding-top: 10px;
+  color: rgba(0, 0, 0, .6);
+  /*background-color: green;*/
+  /*border: 1px solid black;*/
+  /*min-width: 400px;*/
+}
+
+.main .company_creation .admin_class td .class_input {
+  /*display: none;*/
+  float: left;
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.main .company_creation .admin_class tr .last_class_td {
+  /*background-color: red;*/
+  display: none;
+
+}
+.main .company_creation .admin_class tr .last_class_td select {
+  float: left;
+  width: 150px;
+  /*height: 30px;*/
+  font-size: 20px;
+  background-color: rgba(114, 138, 66, .75);
+}
+
+.main .company_creation .admin_class tr .last_class_td .description {
+  float: left;
+  /*width: 150px;*/
+  /*height: 30px;*/
+  font-size: 15px;
+  margin-right: 10px;
+  /*background-color: rgba(114, 138, 66, .25);*/
+}
+
+.main .company_creation .admin_class td .class_save {
+  margin-left: 10px;
+  float: left;
+}
+
+ .main .company_creation .admin_class td .class_save_instructor {
+  margin-left: 10px;
+  float: left;
+}
+
+.main .company_creation .edit_company {
+  width: 500px;
+  margin: 40px;
+  font-size: 30px;
+  display: none;
+}
+
+.main .company_creation li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.main .company_creation input, .main .company_creation button, .main .company_creation textarea {
+  float: right;
+}
+
+.main .company_creation form {
+  /*background-color: red;*/
+  overflow: hidden;
+}
+.main .company_creation li .submit {
+  margin-top: 10px;
+  float: right;
+  /*background-color: red;*/
+  padding: 20px;
+  clear: both;
+}
+
+.main .company_creation .show_classes {
+  width: 600px;
+  margin: 40px;
+  font-size: 30px;
+  display: none;
+}
+
+.main .company_creation .show_classes th {
+  padding-right: 30px;
+  /*padding-top: 20px;*/
+  vertical-align: middle;
+  /*background-color: tomato;*/
+}
+
+.main .company_creation .show_classes td {
+  vertical-align: middle;
+}
+
+.main .company_creation .show_classes img {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.main .company_creation .user_permissions {
+  width: 600px;
+  margin: 40px;
+  font-size: 30px;
+  display: none;
+}
+
+.main .company_creation .user_permissions  td {
+  padding-left: 30px;
+  /*font-size: 20px;*/
+  color: rgba(0,0,0, 0.6);
+  padding-top: 10px;
+}
+
+.main .company_creation .account {
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin: 15px;
+}
+
+.main .company_creation .logo_header {
+  padding-top: 20px;
+  vertical-align: top;
+}
+
+.main .company_creation .logo {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.main .company_creation .main_image {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.main .company_creation .main_image img {
+  width: 100%;
+  /*position: relative;*/
+  /*bottom: 150px;*/
+}
+
+.main .company_creation .arrow {
+  position: absolute;
+  left: 700px;
+  top: 250px;
+  opacity: .75;
+  z-index: 2;
+}
+
+.main .company_creation .description_group h1 {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.main .company_creation .description_group .description {
+  font-size: 20px;
+  margin: 15px;
+  line-height: 24px;
+  color: black;
+  font-weight: 100;
+}
+
+.main .reviews {
+  overflow: hidden;
+  padding-bottom: 10px;
+  /*background-color: tomato;*/
+  padding-right: 5px; /*to make shadow with course_content match*/
+}
+
+.main .reviews .review_group {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(200, 200, 200, .15);
+  margin-top: 20px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  margin-right: 0px;
+
+  /*position: relative;*/
+  /*top: 30px;*/
+}
+.main .reviews .review_group .reviewer {
+  float: left;
+  margin-right: 15px;
+}
+.main .reviews .review_group .reviewer .image {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0 10px black;
+  border: 1px solid gray;
+}
+
+.main .reviews .review_group .reviewer .image:hover {
+  box-shadow: 0 0 10px darkgreen;
+}
+
+.main .reviews .review_group .reviewer .image img{
+  height: 40px;
+  float: left;
+}
+
+.main .reviews .review_group .reviewer .name {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.main .reviews .review_group .review {
+  font-size: 18px;
+  line-height: 20px;
+  width: 600px;
+  float: left;
+}
+
+.main .reviews .review_group .rating img{
+  width: 80px;
+  float: right;
+  margin-right: 20px;
+}
+aside {
+  width: 320px;
+  float: right;
+  margin-right: 0px;
+}
+
+aside .account {
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(114, 138, 66, .05);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  text-align: center;
+}
+
+aside .account {
+  font-size: 30px;
+}
+
+aside .account div{
+  padding: 10px;
+}
+
+aside .account div:hover{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(114, 138, 66, .15);
+}
+
+/*aside .account input {
+  margin: 10px;
+  color: green;
+  background-color: green;
+}*/
+
+
+
+aside .account .course {
+  margin: 15px;
+  height: 200px;
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(114, 138, 66, .15);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+  position: relative;
+}
+
+aside .account .course .course_name {
+  padding: 5px;
+}
+
+aside .account .course:hover {
+  box-shadow: 0 0 10px darkgreen;
+  border: 1px solid gray;
+}
+
+aside .account .course .course_overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  bottom: -31px;
+}
+
+aside .account .course .course_overlay .next_class {
+  color: rgba(255, 255, 255, .45);
+  margin-top: 30px;
+}
+
+aside .account .course .course_overlay .class_date {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+aside .price {
+  font-size: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(114, 138, 66, .15);
+  margin-top: 20px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+
+aside .price .buy_now {
+  height: 30px;
+  width: 200px;
+  float: right;
+  background-image: linear-gradient(rgb(175, 202, 125) 20%, rgb(153, 187, 89)), none;
+  color: #EDEFEE;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px grey;
+  border: 1px solid #738C42;
+  font-size: 15px;
+}
+
+aside .price .buy_now:hover {
+  background-image: linear-gradient(rgb(200, 227, 150) 20%, rgb(172, 200, 104)), none;
+}
+
+aside .other_info {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  background-color: rgba(114, 138, 66, .25);
+  font-size: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+aside .other_info p {
+  text-align: center;
+}
+
+aside .image {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  box-shadow: 0 0 10px black;
+  margin: auto;
+  margin-top: 20px;
+}
+
+aside .instructor .image:hover {
+  box-shadow: 0 0 10px darkgreen;
+  border: 1px solid gray;
+}
+
+
+aside .instructor .image img {
+  width: 200px;
+}
+
+aside .name {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+aside .other_courses {
+  font-size: 20px;
+  text-align: center;
+}
+
+aside .other_courses p {
+  margin-bottom: 10px;
+}
+
+aside li {
+  list-style-type: none;
+  margin: 5px;
+  font-size: 18px;
+}
+
+aside a {
+  color: black;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-shadow: 0 0 4px green;
+  color: rgb(255, 255, 255)
+}
+
+aside hr {
+  margin: 20px;
+}
+
+aside .company {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+  background-color: rgba(114, 138, 66, .35);
+  font-size: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+aside .company .image {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  box-shadow: 0 0 10px black;
+  margin: auto;
+  margin-top: 20px;
+  background-color: red;
+}
+
+aside .company .image:hover {
+  box-shadow: 0 0 10px darkgreen;
+  border: 1px solid gray;
+}
+
+aside .company .image img {
+  width: 200px;
+}
+
+aside .company p {
+  text-align: center;
+}
+
+

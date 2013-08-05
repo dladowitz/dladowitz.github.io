@@ -56,6 +56,55 @@ $(document).ready(function() {
     });
   });
 
+  $('.main .company_creation .admin_class .first_class_td').click(function(){
+    // alert($(this).find('input'))
+    // $(this).find('td').css('color', 'red')
+    // $(this).css('background-color', 'green')
+    $(this).hide();
+    $(this).parent().find('.last_class_td').show();
+  });
+
+ $('.main .company_creation .admin_class .class_save').click(function(){
+    var updatedText = $(this).parent().parent().find('input:text').val();
+
+    $(this).parent().parent().find('.last_class_td').hide();
+    if(updatedText.length > 0){
+      $(this).parent().parent().find('.first_class_td').html(updatedText);
+    };
+    $(this).parent().parent().find('.first_class_td').show();
+  });
+
+ $('.main .company_creation .admin_class .class_save_instructor').click(function(){
+    var updatedText = $(this).parent().parent().find('select').val();
+
+    $(this).parent().parent().find('.last_class_td').hide();
+    $(this).parent().parent().find('.first_class_td').html(updatedText);
+
+    $(this).parent().parent().find('.first_class_td').show();
+  });
+
+ $('.main .company_creation .admin_class .class_save_description').click(function(){
+    var updatedText = $(this).parent().parent().find('textarea').val();
+
+    $(this).parent().parent().find('.last_class_td').hide();
+    if(updatedText.length > 0){
+      $(this).parent().parent().find('.first_class_td').html(updatedText);
+    };
+
+    $(this).parent().parent().find('.first_class_td').show();
+  });
+
+
+  $(function() {
+    $( ".datepicker" ).datepicker();
+  });
+  // $('.login_submit').click(function(e){
+  //   // e.preventDefault();
+  //   // window.open($(".login_link").attr('href'),'_blank')
+  //   $('.login_link').trigger('click');
+  //   // alert('help')
+  // });
+
 
 });
 
