@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Piedra' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style_account.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/style_account.css" />
     <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
 
-      <a href="index.html">
+      <a href="../index.html">
         <div class="logo">
           Adventuring
         </div>
        </a>
       <div class="nav">
         <ul>
-          <a href="sign_in.html"><li>sign in</li></a>
+          <a href="../sign_in.html"><li>sign in</li></a>
           <a href="#"><li>categories</li></a>
           <a href="#"><li>cities</li></a>
-          <a href="account.html"><li class='last'>account</li></a>
+          <a href="../dashboard/account.html"><li class='last'>account</li></a>
         </ul>
       </div>
     </header>
@@ -51,7 +51,7 @@
               </tr>
               <tr>
                 <th class='logo_header'>Logo:</th>
-                <td><img class='logo' src="images/mountain_high.jpg" height=100px></td>
+                <td><img class='logo' src="../images/mountain_high.jpg" height=100px></td>
               </tr>
               <tr>
                 <th>Description:</th>
@@ -80,46 +80,68 @@
             <table>
               <tr>
                 <th>Intermediate Rock Climbing</th>
-                <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/roof.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
               <tr>
                 <th>Big Wall Clinic</th>
-                <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/big_wall_class3.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
               <tr>
                 <th>Two Day Canyoneering Trip</th>
-                <td><img class='class_img' src="images/canyoneering.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/canyoneering.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
               <tr>
                 <th>Self Rescue</th>
-                <td><img class='class_img' src="images/mountaineering.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/mountaineering.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
             </table>
             <div class="account_section_header">Inactive Classes</div>
             <table>
               <tr>
                 <th>Intermediate Rock Climbing</th>
-                <td><img class='class_img' src="images/roof.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/roof.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
               <tr>
                 <th>Big Wall Clinic</th>
-                <td><img class='class_img' src="images/big_wall_class3.jpg" height=50px width=50px></td>
-                <td><a href="dashboard/admin_class.html"><button>edit</button></a></td>
+                <td><img class='class_img' src="../images/big_wall_class3.jpg" height=50px width=50px></td>
+                <td><a href="../dashboard/admin_class.html"><button>edit</button></a></td>
               </tr>
             </table>
           </div>
           <div class="user_permissions">
             <div class="account_section_header">User Permissions</div>
             <table>
+<!--               <tr>
+                <th>Instructor:</th>
+                <td class='first_class_td'>Cameron S</td>
+                <td class='last_class_td'>
+                  <select class='instructor'>
+                    <option value="Cameron S">Cameron S</option>
+                    <option value="Teresa H">Teresa H</option>
+                    <option value="Patrick K">Patrick K</option>
+                    <option value="David L">David L<David Lion>
+                  </select>
+                  <button class='class_save_instructor'>save</button>
+                </td>
+              </tr> -->
               <tr>
                 <th>David Ladowitz</th>
-                <td>Admin</td>
-                <td><button>edit</button></td>
+                <td class='shown_permission'>Admin</td>
+                <td class='edit_permission'>
+                  <form class='checkbox_permissions'>
+                    <!-- <ul> -->
+                      <input class='checkbox_item' type="checkbox" name="permission" value="admin">Admin<br>
+                      <input type="checkbox" name="permission" value="instructor">Instructor<br>
+                      <input type="checkbox" name="permission" value="admin">Manager<br>
+                    <!-- </ul> -->
+                  </form>
+                  <button class='save_permission'>save</button>
+                </td>
               </tr>
               <tr>
                 <th>Teresa Huang</th>
@@ -263,11 +285,11 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
     <script src="http://malsup.github.com/jquery.easing.1.3.js"></script>
 
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

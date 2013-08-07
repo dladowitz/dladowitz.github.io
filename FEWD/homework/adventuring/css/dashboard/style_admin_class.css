@@ -51,6 +51,7 @@ header  {
   padding-left: 20px;
   padding-top: 10px;
   color: rgba(0, 0, 0, .6);
+  /*border: 1px solid black;*/
   /*background-color: green;*/
   /*border: 1px solid black;*/
   /*min-width: 400px;*/
@@ -63,11 +64,29 @@ header  {
   width: 300px;
   font-size: 20px;
 }
+ .main .company_creation .admin_class .first_class_td {
+  /*float: left;*/
+ }
+.main .company_creation .admin_class .edit_icon {
+  /*overflow: hidden;*/
+  /*height: 10px;*/
+  float: left;
+  /*background-color: red;*/
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: none;
+}
 
+/*.main .company_creation .admin_class .edit_icon img{
+  overflow: hidden;
+
+  background-color: green;
+  float: left;
+}*/
 .main .company_creation .admin_class tr .last_class_td {
   /*background-color: red;*/
   display: none;
-
 }
 .main .company_creation .admin_class tr .last_class_td select {
   float: left;

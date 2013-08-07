@@ -120,6 +120,33 @@ header  {
   padding-top: 10px;
 }
 
+.main .company_creation .user_permissions .checkbox_permissions {
+  /*margin-bottom: 10px;*/
+  padding-bottom: 10px;
+  /*background-color: red;*/
+  /*float: left;*/
+}
+
+/*.main .company_creation .user_permissions .checbox_item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  background-color: green;*
+  float: left;
+}*/
+
+.main .company_creation .user_permissions .save_permission {
+  margin-top: 10px;
+  float: left;
+}
+
+.main .company_creation .user_permissions .edit_permission {
+  width: 150px;
+  border-radius: 1px solid black;
+  /*background-color: tomato;*/
+  display: none;
+}
+
 .main .company_creation .account {
   font-size: 50px;
   margin-bottom: 20px;
@@ -146,7 +173,7 @@ header  {
 
 .main .company_creation .main_image img {
   width: 100%;
-  /*position: relative;*/
+  /*position: relative;
   /*bottom: 150px;*/
 }
 
@@ -259,6 +286,13 @@ aside .account div:hover{
   border: 1px solid gray;
   border-radius: 5px;
   background-color: rgba(114, 138, 66, .15);
+}
+
+aside .account .highlight{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(114, 138, 66, .15);
+  /*background-color: red;*/
 }
 
 /*aside .account input {

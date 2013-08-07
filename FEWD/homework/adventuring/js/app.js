@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // alert('yes')
 
+  //cycles though images on class page and company page
   $('.main_image').cycle({
     fx:      'scrollRight',
     next:   '.arrow',
@@ -9,15 +10,51 @@ $(document).ready(function() {
     easing:  'easeInOutBack',
   });
 
+  //slides up and down screen on main page
   $('.course').hover(
     function(){$(this).find('.overlay').slideDown()},
     function(){$(this).find('.overlay').slideUp()}
   );
 
+  //slides up and down screen on company page
   $('.course').hover(
     function(){$(this).find('.course_overlay').slideDown()},
     function(){$(this).find('.course_overlay').slideUp()}
   );
+
+
+
+
+
+    // var mouse_is_inside = false;
+
+    // $('.account div').hover(
+    //   function(){ console.log(mouse_is_inside=true) },
+    //   function(){ console.log(mouse_is_inside=false) }
+    // );
+
+    // $("body").mouseup(function(){
+    //     if(mouse_is_inside) {
+    //       $('.show_company_info').addClass('highlight')
+    //     } else {
+    //       $('.show_company_info').removeClass('highlight')
+    //     }
+    //
+
+    var element
+    $('.account div').mouseup(function(){
+      console.log(element = this)
+
+      $('.account div').each(function(){
+        if(this == element){
+          $(this).addClass('highlight')
+        }else{
+          $(this).removeClass('highlight')
+        }
+      })
+    })
+
+
 
   $('.show_company_info').click(function(){
     $('.show_company').css('display', 'block');
@@ -55,6 +92,17 @@ $(document).ready(function() {
       source: availableSports
     });
   });
+
+  $('.main .company_creation .admin_class .first_class_td').hover(
+    function(){$(this).css({cursor: 'pointer', color: 'black'})},
+    function(){$(this).css('color', 'rgba(0, 0, 0, .6)')}
+  );
+
+  $('.main .company_creation .admin_class .first_class_td').hover(
+    function(){$(this).parent().find('.edit_icon').show()},
+    function(){$(this).parent().find('.edit_icon').hide()}
+  );
+  // .edit_icon
 
   $('.main .company_creation .admin_class .first_class_td').click(function(){
     // alert($(this).find('input'))
@@ -95,15 +143,41 @@ $(document).ready(function() {
   });
 
 
+  $('.shown_permission').click(function(){
+    // var updatedText = $(this).parent().parent().find('textarea').val();
+
+    // $(this).parent().parent().find('.last_class_td').hide();
+    // if(updatedText.length > 0){
+    //   $(this).parent().parent().find('.first_class_td').html(updatedText);
+    // };
+
+    $(this).parent().find('.edit_permission').show();
+    $(this).hide();
+    // $(this).parent().parent().find('.first_class_td').show();
+  });
+
+  //picks date when editing a class
   $(function() {
     $( ".datepicker" ).datepicker();
   });
-  // $('.login_submit').click(function(e){
-  //   // e.preventDefault();
-  //   // window.open($(".login_link").attr('href'),'_blank')
-  //   $('.login_link').trigger('click');
-  //   // alert('help')
-  // });
+
+
+  //add background highlight to show where user is in nav bar
+  $(function(){
+    var str=location.href;
+    // console.log(str)
+
+    $('.nav a').each(function() {
+      // console.log(this.href)
+      if(str === this.href) {
+        $(this).addClass('active')
+        // $("li.active").removeClass("active");
+        // $(this).parent().addClass("active");
+      }
+    });
+  })
+
+
 
 
 });
